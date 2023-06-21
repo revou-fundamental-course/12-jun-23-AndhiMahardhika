@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Konversi Temperatur</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js" defer></script>
+        <div class="header">
+            <img src="assets/revo.png" alt="RevoU">
+            <h1>Konversi Temperatur</h1>
+        </div>
+    </head>
+    <body>    
+        <p>
+            Ubah nilai temperatur dari Celcius (°C) ke Fahrenheit (°F)
+        </p>
+        <section name="input">
+            <select id="selectInput" name="pilihan">
+                <optgroup label="Pilih Jenis Suhu"></optgroup>
+                    <option value="C" id="celcius">Celcius(°C)</option> <br />
+                    <option value="F" id="fahrenheit">Fahrenheit(°F)</option> <br />
+            </select><br>
+            <input type="text" id="inputField">
+            <div class="inputButton">
+                <button type="button" class="convertButton" onclick="(convert())">Conversion</button>
+                <button type="button" class="resetButton" onclick="(reset())" >Reset</button>
+                <button type="button" class="reverseButton" onclick="(reverse())" >Reverse</button>
+            </div>
+        </section>
+        <section name="output">
+            <label for="outputField">Hasil Konversi :</label><br>
+            <input type="text" class="form-control" id="outputField">
+        </section>
+        <section class="rumus">
+            <label for="outputRumus">Cara Kalkulasi :</label>
+            <input type="text" readonly class="form-control" id="outputRumus">
+        </section>
+        <h2 id="penjelasan"><!--Cara Konversi Dari Celcius (°C) ke Farenheit (°F)--></h2>
+        <section class="deskripsi" id="deskripsirumus">
+            <!--<p>
+                suhu <em>S</em> dalam derajat Fahrenheit (°F) sama dengan suhu <em>S</em> dalam derajat 
+                Celcius (°C) kali (9/5) tambah 32.
+            </p>-->            
+        </section>
+        <p id="rumusdasar">
+                <!--<em>S</em><sub>(°F)</sub> = ( <em>S</em><sub>(°C)</sub> x 9/5 ) + 32 <br>
+                atau <br>
+                <em>S</em><sub>(°F)</sub> = ( <em>S</em><sub>(°C)</sub> x 1.8 ) + 32-->
+            </p><br><br>
+        <footer>
+            ©Web Ini dikerjakan oleh Andhi Mahardhika untuk memenuhi tugas Mini Coding Project RevoU 
+        </footer>
+    </body>
+</html>
